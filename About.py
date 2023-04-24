@@ -6,14 +6,14 @@ add_page_title()
 
 show_pages([
     Section(name="Home", icon="🏠"),
-    Page("About.py", "About", "🧐"),
-    Page("04_Contact.py", "Contact", "📪"),
-    Section(name="Math", icon="🔢"),
-    Page("03_Publications.py", "Publications", "📜"),
-    Section(name="Data Science", icon="🤖"),
-    Page("06_Stocks.py", "Stocks", "📈"),
-    Section(name="Information Security", icon="🔐"),
-    Page("05_Hacking.py", "Hack", "😈")
+    #Page("About.py", "About", "🧐"),
+    #Page("04_Contact.py", "Contact", "📪"),
+    #Section(name="Math", icon="🔢"),
+    #Page("03_Publications.py", "Publications", "📜"),
+    #Section(name="Data Science", icon="🤖"),
+    #Page("06_Stocks.py", "Stocks", "📈"),
+    #Section(name="Information Security", icon="🔐"),
+    #Page("05_Hacking.py", "Hack", "😈")
 ])
 
 st.markdown(
