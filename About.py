@@ -6,7 +6,7 @@ add_page_title()
 
 show_pages([
     Section(name="Home", icon="🏠"),
-    #Page("About.py", "About", "🧐"),
+    Page("About.py", "About", "🧐"),
     #Page("04_Contact.py", "Contact", "📪"),
     #Section(name="Math", icon="🔢"),
     #Page("03_Publications.py", "Publications", "📜"),
