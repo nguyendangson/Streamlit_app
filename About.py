@@ -12,6 +12,7 @@ show_pages([
     Page("03_Publications.py", "Publications", "📜"),
     Section(name="Data Science", icon="🤖"),
     Page("06_Stocks.py", "Stocks", "📈"),
+    Page("02_Gender_and_Age_detection.py", "Detection", "👁️"),
     Section(name="Information Security", icon="🔐"),
     Page("05_Hacking.py", "Hack", "😈")
 ])
