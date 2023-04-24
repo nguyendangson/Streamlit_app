@@ -4,7 +4,7 @@ from PIL import Image
 from st_pages import Page, Section, add_page_title, show_pages ,show_pages_from_config
 add_page_title()
 
-show_pages([Section(name="Home", icon="🏠"), Page("About.py", "About", "🧐")])
+show_pages([Section(name="Home"), Page("About.py", "About")])
 
 st.markdown(
          f"""
