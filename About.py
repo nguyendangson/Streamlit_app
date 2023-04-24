@@ -5,8 +5,8 @@ from st_pages import Page, Section, add_page_title, show_pages ,show_pages_from_
 add_page_title()
 
 show_pages([
-    #Section(name="Home", icon="🏠"),
-    Page("About.py", "About", "🧐"),
+    Section(name="Home", icon="🏠"),
+    Page("About.py", "About", "🧐")
     #Page("04_Contact.py", "Contact", "📪"),
     #Section(name="Math", icon="🔢"),
     #Page("03_Publications.py", "Publications", "📜"),
