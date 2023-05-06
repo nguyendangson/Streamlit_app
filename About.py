@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components
 from PIL import Image
 
 from st_pages import Page, Section, add_page_title, show_pages ,show_pages_from_config
@@ -13,8 +14,8 @@ show_pages([
     Section(name="Data Science", icon="🤖"),
     Page("06_Stocks.py", "Stocks", "📈"),
     Page("02_Gender_and_Age_detection.py", "Detection", "👁️"),
-    Section(name="Information Security", icon="🔐"),
-    Page("05_Hacking.py", "Hack", "😈")
+    #Section(name="Information Security", icon="🔐"),
+    #Page("05_Hacking.py", "Hack", "😈")
 ])
 
 st.markdown(
@@ -30,13 +31,9 @@ st.markdown(
          unsafe_allow_html=True
      )
 
-
-
 image = Image.open('Son Nguyen.jpg')
-
-left_co, cent_co,last_co = st.columns(3)
-with cent_co:
-    st.image(image,width=200)
+st.header("Son Dang Nguyen")
+st.image(image, width=400)
 
 "I am currently a Ph.D. candidate in Mathematics at The University of Alabama, Tuscaloosa. I am fortunate to be advised by Prof. [Kyungyong Lee](https://math.ua.edu/people/klee/). Before coming to Alabama, I earned a Master's degree in Optimization and Statistics at Wayne State University, Detroit, Michigan."
 
