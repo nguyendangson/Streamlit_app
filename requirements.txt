@@ -5,6 +5,7 @@ gym_super_mario_bros==7.3.0
 matplotlib==3.5.2
 nes_py==8.2.1
 numpy
+opencv-python-headless
 opencv_python_headless
 opencv_contrib_python_headless
 opencv-contrib-python-headless
