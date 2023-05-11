@@ -6,6 +6,7 @@ matplotlib==3.5.2
 nes_py==8.2.1
 numpy
 opencv_python_headless
+opencv_contrib_python_headless
 pandas==1.4.2
 pandas_datareader==0.10.0
 Pillow==9.5.0
