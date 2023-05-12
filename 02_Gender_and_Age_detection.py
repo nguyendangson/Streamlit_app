@@ -5,7 +5,7 @@ import numpy as np
 #import deepface
 import cv2
 
-#from deepface import DeepFace
+from deepface import DeepFace
 from st_pages import Page, Section, add_page_title, show_pages ,show_pages_from_config
 add_page_title()
 
