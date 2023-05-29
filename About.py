@@ -16,7 +16,7 @@ show_pages([
     #Section(name="Math", icon="🔢"),
     Section(name="Data Science", icon="🤖"),
     Page("06_Stocks.py", "Stocks", "📈"),
-    Page("02_Gender_and_Age_detection.py", "Detection", "👁️"),
+    #Page("02_Gender_and_Age_detection.py", "Detection", "👁️"),
     Page("10_Data_Map.py", "Data Map", "🌍"),\
     #Section(name="Information Security", icon="🔐"),
     #Page("05_Hacking.py", "Hack", "😈")
@@ -45,3 +45,4 @@ st.image(image, width=400)
 
 "In Computer Science, I am interested in machine learning, cryptography, hacking and security. I am trying to share cool projects I learned on the homepage with Streamlit of Python."
 
+st.markdown(f"""<a href="https://info.flagcounter.com/xaga"><img src="https://s01.flagcounter.com/count2/xaga/bg_FFFFFF/txt_000000/border_CCCCCC/columns_3/maxflags_20/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>""", unsafe_allow_html=True)
