@@ -27,3 +27,5 @@ st.image(list_image,width=300)
 "- **Son Dang Nguyen**, Ervin, Tucker J.; Jackson, Blake; Lane, Jay; Lee, Kyungyong; O'Donohue, Jack; Vaughan, Michael., [\"Permutations whose reverse shares the same recording tableau in the RS correspondence\"](https://www.mat.univie.ac.at/~slc/wpapers/s86jackson.pdf)."
 
 "- **Son Dang Nguyen**, [\"Constrained Fermat-Torricelli-Weber Problem in real Hilbert Spaces\"](https://arxiv.org/pdf/1806.04296.pdf)."
+
+st.markdown(f"""<a href="https://info.flagcounter.com/xaga"><img src="https://s01.flagcounter.com/count2/xaga/bg_FFFFFF/txt_000000/border_CCCCCC/columns_3/maxflags_20/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>""", unsafe_allow_html=True)
