@@ -10,13 +10,15 @@ add_page_title()
 show_pages([
     Section(name="Home", icon="🏠"),
     Page("About.py", "About ", "🧐"),
+    Page("03_Publications.py", "Research", "ℼ"),
+    Page("12_Activities.py", "Activities", "🤝"),
+    Page("11_Teaching.py", "Teaching", "👨‍🏫"),
     Page("CV.py", "CV", "📋"),
-    Page("03_Publications.py", "Research", "📜"),
-    Page("04_Contact.py", "Contact", "📪"),
+    Page("04_Contact.py", "Contact me", "📪"),
     #Section(name="Math", icon="🔢"),
     Section(name="Data Science", icon="🤖"),
     Page("06_Stocks.py", "Stocks", "📈"),
-    #Page("02_Gender_and_Age_detection.py", "Detection", "👁️"),
+    Page("02_Gender_and_Age_detection.py", "Detection", "👁️"),
     Page("10_Data_Map.py", "Data Map", "🌍"),\
     #Section(name="Information Security", icon="🔐"),
     #Page("05_Hacking.py", "Hack", "😈")
