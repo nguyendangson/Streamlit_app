@@ -9,8 +9,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import plotly.express as px # interactive charts
 
-import datetime as dt
-from datetime import datetime
 from dateutil.relativedelta import relativedelta
 import time # to simulate a real time data, time loop
 from st_pages import Page, Section, add_page_title, show_pages ,show_pages_from_config
@@ -20,39 +18,174 @@ add_page_title()
 #Title= "📈Stocks"
 #st.set_page_config(page_title=None, page_icon=None, layout="centered", initial_sidebar_state="auto", menu_items=None)
 
-#st.title(Title)
+import datetime as dt
+from datetime import datetime
+end = dt.datetime.now()
+start = end - dt.timedelta(weeks=52)
+
+def stocks(input):
+    data = yf.download(input, start=start, end=end)
+    max=round(data["Close"].max(),2)
+    min=round(data["Close"].min(),2)
+    real_price= round(stock_info.get_live_price(input),2)
+    st.slider(input + " ("+ str(min) + ", " + str(real_price) + ", " + str(max) + ")", int(min), int(max), int(real_price))
+    st.divider()
+    #st.metric(label=input, value= stock_info.get_live_price(input),delta=stock_info.get_live_price(input)-price)
+
+st.header("Trending Stocks" )
+coll=st.columns(4)
+with coll[0]:
+    stocks("COIN")
+    stocks("BOIL")
+    stocks("SOFI")
+    stocks("UPST")
+    stocks("CVNA")
+with coll[1]:
+    stocks("U")
+    stocks("AFRM")
+with coll[2]:
+    stocks("MARA")
+with coll[3]:
+    stocks("DPST")
 
 
-Input_stock=st.text_input("Input your Stock:")
-#start=st.text_input("Start:")
-#end=st.text_input("End:")
-#history_months=st.number_input("Months:")
+st.header("Top 1% Companies" )
+
+data = yf.download("AAPL", start=start, end=end)
+
+col=st.columns(4)
+with col[0]:
+    stocks("MSFT")
+    stocks("GOOG")
+    stocks("AMZN")
+    stocks("NVDA")
+    stocks("TSLA")
+    stocks("BRK-B")
+    stocks("META")
+    stocks("TSM")
+    stocks("V")
+    stocks("LVMUY")
+    stocks("TCEHY")
+    stocks("UNH")
+    stocks("LLY")
+    stocks("XOM")
+    stocks("JNJ")
+    stocks("WMT")
+    stocks("JPM")
+    stocks("NVO")
+    stocks("AVGO")
+    stocks("MA")
+    stocks("PG")
+    stocks("ORCL")
+    stocks("HD")
+
+with col[1]:
+    stocks("RHHBY")
+    stocks("NSRGY")
+    stocks("LRLCY")
+    stocks("ABBV")
+    stocks("BABA")    
+    stocks("BAC")
+    stocks("AZN")
+    stocks("COST")
+    stocks("ADBE")
+    stocks("HESAY")
+    stocks("IDCBY")
+    stocks("PFE")
+    stocks("TM")
+    stocks("MCD")
+    stocks("NVS")
+    stocks("CSCO")
+    stocks("SHEL")
+    stocks("CVX")
+    stocks("ASML")
+    stocks("MRK")
+    stocks("KO")
+    stocks("PEP")
+
+    #st.header("Big tech")
+    #placeholder = st.empty()
+    #for seconds in range(5):
+        # creating a single-element container.
+     #   with placeholder.container():
+     #       stocks("aapl")
+      #      stocks("msft")
+      #      stocks("nflx")
+      #      stocks("meta")
+      #      time.sleep(1)   # need the code to real time     
+
+with col[2]:
+    stocks("AAPL")
+    stocks("ABT")
+    stocks("LIN")
+    stocks("DHR")
+    stocks("NKE")
+    stocks("CMCSA")
+    stocks("DIS")
+    stocks("TXN")
+    stocks("SAP")
+    stocks("BHP")
+    stocks("CHDRY")
+    stocks("WFC")
+    stocks("TMUS")
+    stocks("HSBC")
+    stocks("UPS")
+    stocks("NEE")
+    stocks("VZ")
+    stocks("PROSY")
+    stocks("INTC")
+    stocks("MS")
+    stocks("PM")
+    stocks("SIEGY")
+    stocks("RTX")
+
+with col[3]:
+    stocks("BA")
+    stocks("RY")
+    stocks("SNY")
+    stocks("UL")
+    stocks("SPGI")
+    stocks("AXP")
+    stocks("LOW")
+    stocks("CAT")
+    stocks("INTU")
+    stocks("COP")
+    stocks("IBM")
+    stocks("TMO")
+    stocks("CRM")
+    stocks("ACN")
+    stocks("NFLX")
+    stocks("TTE")
+    stocks("TCS")
+    stocks("AMD")
+    stocks("QCOM")
+    stocks("HON")
+    stocks("BMY")
+#    st.header("Big Pharmacy")
+#    placeholder1 = st.empty()
+#    for seconds in range(5):
+        # creating a single-element container.
+#        with placeholder1.container():
+ #           stocks("nvs")
+  #          stocks("lly")
+   #         stocks("sny")
+    #        stocks("rhhby")
+     #       stocks("azn")
+     #       time.sleep(1)  
+
+
+
+Input_stock=st.text_input("Input your Stock to analyze:")
+
 if Input_stock:
-
-    #end= dt.datetime.today()
-    #start= end + relativedelta(months=-6)
     stock= yf.Ticker(Input_stock)
-    #Input_stock="aapl"
-    #pdr.get_data_yahoo('aapl',start=start,end=end)
-    #pdr.get_data_yahoo('AAPL', start="2017-08-13",end="2017-08-14")
-    #st.write(pdr.get_data_yahoo("aapl",str(start),str(end)))
-    #pdr.DataReader("AAPL", "yahoo", start="2017-08-13",end="2017-08-14")
-
-    #st.write(stock.actions)
-    #st.write(stock.info)
-    #st.write(stock.news)
-    #st.write(stock.shares)
-
     data=stock.history(period="max")
-    #st.write(data)
     data["Dividend"]=stock.dividends
     data["Dividend"].fillna(0, inplace=True)  # fill empty to zero   
     data["50 moving avarege"]=data["Open"].rolling(window = 50, min_periods = 1).mean()
     data["150 moving avarege"]=data["Open"].rolling(window = 150, min_periods = 1).mean()
     data["200 moving avarege"]=data["Open"].rolling(window = 150, min_periods = 1).mean()
-
     tab1, tab2 = st.tabs(["Dividend", "History"])
-    #fig = px.line(data,  y="Dividend", title='History ')
     with tab1:
         # Use the Streamlit theme.
         # This is the default. So you can also omit the theme argument.
@@ -68,9 +201,6 @@ if Input_stock:
         st.write(data[["Open","Dividend","50 moving avarege","150 moving avarege","200 moving avarege"]])
         st.line_chart(data[["Open","50 moving avarege","150 moving avarege","200 moving avarege"]], width=300, height=500)
     
-    
-    #st.write(stock.get_shares_full(start="2022-01-01", end=None))
-
     st.header("News:")
     for i in stock.news:
         st.write(i["link"])
@@ -97,9 +227,5 @@ if Input_stock:
         chart.add_rows(new_data)
         time.sleep(1)
         #st.metric(label="Stock price", value=stock_info.get_live_price(Input_stock))
-        
-        
-st.markdown(f"""<a href="https://info.flagcounter.com/xaga"><img src="https://s01.flagcounter.com/count2/xaga/bg_FFFFFF/txt_000000/border_CCCCCC/columns_3/maxflags_20/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>""", unsafe_allow_html=True)
 
-        
-
+st.markdown(f"""<a href="https://info.flagcounter.com/xaga"><img src="https://s01.flagcounter.com/count2/xaga/bg_FFFFFF/txt_000000/border_CCCCCC/columns_3/maxflags_20/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>""", unsafe_allow_html=True )
