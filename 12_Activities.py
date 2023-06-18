@@ -16,13 +16,13 @@ st.markdown(
          unsafe_allow_html=True
      )
 
-"- (June 2023) Cluster algebras and related topics in East Asia, Seoul National University"
-"- (Aug 2022) **Invited Talk,** Young Mathematicians Conference between Vietnam Institute of Mathematics, Vietnam National University Hanoi and Hanoi Pedagogical University 2"
-"- (July 2021) Combinatorics and Algebras from A to Z virtual conference. "
-"- (May 2022) Open Problems in Algebraic Combinatorics, University of Minnesota."
-"- (Nov 2021) **Invited Talk**, AMS Fall Southeastern Sectional Meeting, University of South Alabama"
-"- (May-Sep 2020) Online Cluster Algebra Seminar."
-"- (July 2020) KIAS Workshop on Combinatorial Problems of Algebraic Origin, Korea Institute for Advanced Study."
+"- (June 2023) [Cluster algebras and related topics in East Asia](http://qsms.math.snu.ac.kr/CARTEA2023), Seoul National University"
+"- (Aug 2022) **Invited Talk,** [Young Mathematicians Conference between Vietnam Institute of Mathematics](https://maths.hpu2.edu.vn/gap-go-toan-hoc-2022--hoi-thao-khoa-hoc-cac-nha-nghien-cuu-tre.html), Vietnam National University Hanoi and Hanoi Pedagogical University 2"
+"- (July 2021) [Combinatorics and Algebras from A to Z virtual conference](https://sites.math.rutgers.edu/~zeilberg/ardz/). "
+"- (May 2022) [Open Problems in Algebraic Combinatorics, University of Minnesota](https://www.samuelfhopkins.com/OPAC/opac.html)."
+"- (Nov 2021) **Invited Talk**, [Special Session on Current Trends in Combinatorial and Homological Commutative Algebra](http://www.ams.org/meetings/sectional/2289_program_ss6.html#title), AMS Fall Southeastern Sectional Meeting, University of South Alabama"
+"- (May-Sep 2020) [Online Cluster Algebra Seminar](https://researchseminars.org/seminar/OCAS)."
+"- (July 2020) [KIAS Workshop on Combinatorial Problems of Algebraic Origin](http://events.kias.re.kr/h/KWCPAO/), Korea Institute for Advanced Study."
 "- Graduate Student Seminar, University of Alabama, October 2022."
 "- Algebra and Topology Seminar, University of Alabama, September 2021."
 
