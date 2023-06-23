@@ -18,7 +18,7 @@ show_pages([
     #Section(name="Math", icon="🔢"),
     Section(name="Data Science", icon="🤖"),
     Page("06_Stocks.py", "Stocks", "📈"),
-    #Page("02_Gender_and_Age_detection.py", "Detection", "👁️"),
+    Page("02_Gender_and_Age_detection.py", "Detection", "👁️"),
     Page("10_Data_Map.py", "Data Map", "🌍"),\
     #Section(name="Information Security", icon="🔐"),
     #Page("05_Hacking.py", "Hack", "😈")
