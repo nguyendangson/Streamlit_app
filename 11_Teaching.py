@@ -15,7 +15,7 @@ st.markdown(
          """,
          unsafe_allow_html=True
      )
-"- Spring 2021 Instructor, Mat 113-005 Calculus 1, The University of Alabama. "
+"- Fall 2022 Instructor, Mat MATH 125-017 Calculus 1, The University of Alabama. "
 
 "- Spring 2021 Instructor, Mat 113-005 Precalculus, The University of Alabama. "
 
@@ -27,6 +27,6 @@ st.markdown(
 
 "- Fall 2018 Instructor, MAT 1800-001 Precalculus, Wayne Sate University."
 
-"- Winter 2018 Instructor, MAT 1000 Math in Today’s World, Wayne Sate University."
+"- Winter 2018 Instructor, MAT 1000 Math in Today's World, Wayne Sate University."
 
-"- 2016-2017 Teaching Assistant in Mathematics Computer Lab, Wayne Sate University."
+st.markdown(f"""<a href="https://info.flagcounter.com/xaga"><img src="https://s01.flagcounter.com/count2/xaga/bg_FFFFFF/txt_000000/border_CCCCCC/columns_3/maxflags_20/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>""", unsafe_allow_html=True)
