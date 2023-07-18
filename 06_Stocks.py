@@ -40,13 +40,34 @@ with coll[0]:
     stocks("SOFI")
     stocks("UPST")
     stocks("CVNA")
+    stocks("ROKU")
 with coll[1]:
     stocks("U")
     stocks("AFRM")
+    stocks("RIVN")
+    stocks("LCID")
+    stocks("NIO")
+    stocks("SQ")
+    stocks("DPSGY")
+    stocks("PYPL")
+    stocks("RBLX")
+    stocks("SHOP")
 with coll[2]:
     stocks("MARA")
+    stocks("RIOT")
+    stocks("VCYT")
+    stocks("PATH")
+    stocks("TTD")
+    stocks("HUBS")
+    stocks("PGR")
 with coll[3]:
     stocks("DPST")
+    stocks("YINN")
+    stocks("EURL")
+    stocks("INDL")
+    stocks("KORU")
+    stocks("BRZU")
+    
 
 
 st.header("Top 1% Companies" )
@@ -156,7 +177,6 @@ with col[3]:
     stocks("ACN")
     stocks("NFLX")
     stocks("TTE")
-    stocks("TCS")
     stocks("AMD")
     stocks("QCOM")
     stocks("HON")
