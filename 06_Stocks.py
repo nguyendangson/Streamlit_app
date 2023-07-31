@@ -87,6 +87,7 @@ with coll[2]:
     stocks("PGR")
     stocks("SCCO")
     stocks("DKNG")
+    stocks("KBR")
 with coll[3]:
     stocks("DPST")
     stocks("YINN")
@@ -99,7 +100,7 @@ with coll[3]:
     stocks("ENPH")
     stocks("LKNCY")
     stocks("APLD")
-    
+
 st.header("Top 1% Companies" )
 
 data = yf.download("AAPL", start=start, end=end)
