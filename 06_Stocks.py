@@ -46,7 +46,6 @@ with coll[0]:
     stocks("ROKU")
     stocks("PLTR")
     stocks("EXAS")
-    stocks("PINS")
     stocks("ABBNY")
     stocks("ISNPY")
     stocks("UBER")
@@ -108,6 +107,8 @@ with coll[3]:
     stocks("LKNCY")
     stocks("APLD")
     stocks("EXPE")
+    stocks("AFL")
+    stocks("SYK")
 
 st.header("Top 1% Companies" )
 
