@@ -35,6 +35,9 @@ def stocks(input):
 st.header("Trending Stocks" )
 coll=st.columns(4)
 with coll[0]:
+    stocks("SCCO")
+    stocks("FCX")
+    stocks("TECK")
     stocks("COIN")
     stocks("BOIL")
     stocks("SOFI")
@@ -50,8 +53,11 @@ with coll[0]:
     stocks("UBS")
     stocks("CCL")
     stocks("DASH")
+    stocks("WPM")
+    stocks("W")
 with coll[1]:
     stocks("U")
+    stocks("GILD")
     stocks("Z")
     stocks("ZM")
     stocks("STLA")
@@ -88,6 +94,7 @@ with coll[2]:
     stocks("SCCO")
     stocks("DKNG")
     stocks("KBR")
+    stocks("VRTX")
 with coll[3]:
     stocks("DPST")
     stocks("YINN")
@@ -100,6 +107,7 @@ with coll[3]:
     stocks("ENPH")
     stocks("LKNCY")
     stocks("APLD")
+    stocks("EXPE")
 
 st.header("Top 1% Companies" )
 
