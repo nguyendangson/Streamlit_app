@@ -79,7 +79,6 @@ with coll[1]:
     stocks("MBLY")
     stocks("SMCI")
     stocks("PINS")
-    stocks("UBER")
     stocks("ABNB")
     stocks("SBUX")
 with coll[2]:
