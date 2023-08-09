@@ -6,9 +6,9 @@ import plotly.express as px # interactive charts
 #pip install pyttsx3
 #pip install PyPDF2
 
-import PyPDF2
-from PyPDF2 import PdfReader
-from PyPDF2 import PdfFileReader
+#import PyPDF2
+#from PyPDF2 import PdfReader
+#from PyPDF2 import PdfFileReader
 import pyttsx3
 #import os
 
