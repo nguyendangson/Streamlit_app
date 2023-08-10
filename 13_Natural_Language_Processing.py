@@ -9,8 +9,7 @@ import plotly.express as px # interactive charts
 #import PyPDF2
 #from PyPDF2 import PdfReader
 #from PyPDF2 import PdfFileReader
-import pyttsx3
-import espeak
+import pyttsx
 #import os
 
 from st_pages import Page, Section, add_page_title, show_pages ,show_pages_from_config
@@ -28,9 +27,7 @@ add_page_title()
 
 Input_text=st.text_input("Input your Text to Speak:")
 if Input_text:
-    espeak.init()
-    speak = espeak.Espeak()
-    #speak = pyttsx3.init()
+    speak = pyttsx.init()
     speak.say(Input_text)
     speak.runAndWait()
 
