@@ -18,4 +18,5 @@ transformers==4.27.4
 yahoo_fin==0.8.9.1
 yfinance==0.1.73
 pyttsx3
+pyttsx
 PyMuPDF
