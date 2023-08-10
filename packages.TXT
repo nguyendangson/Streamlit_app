@@ -8,3 +8,4 @@ tesseract-ocr-all
 libgl1
 libespeak1
 libespeak.so.1
+python-espeak
