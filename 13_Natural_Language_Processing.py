@@ -1,7 +1,4 @@
 import streamlit as st
-import pandas as pd
-from pandas_datareader import data as pdr
-import plotly.express as px # interactive charts
 
 #pip install pyttsx3
 #pip install PyPDF2
@@ -9,8 +6,7 @@ import plotly.express as px # interactive charts
 #import PyPDF2
 #from PyPDF2 import PdfReader
 #from PyPDF2 import PdfFileReader
-import pyttsx
-#import os
+import pyttsx3
 
 from st_pages import Page, Section, add_page_title, show_pages ,show_pages_from_config
 add_page_title()
