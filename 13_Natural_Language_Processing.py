@@ -23,7 +23,7 @@ add_page_title()
 
 Input_text=st.text_input("Input your Text to Speak:")
 if Input_text:
-    speak = pyttsx.init()
+    speak = pyttsx3.init()
     speak.say(Input_text)
     speak.runAndWait()
 
