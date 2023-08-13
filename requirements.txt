@@ -20,3 +20,4 @@ yfinance==0.1.73
 PyPDF2
 pyttsx3
 scamp
+scamp_extensions
