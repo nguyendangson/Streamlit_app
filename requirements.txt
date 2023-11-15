@@ -1,5 +1,5 @@
 st-pages==0.4.0
-opencv-python
+opencv-python-headless
 deepface
 matplotlib==3.5.2
 nes_py==8.2.1
