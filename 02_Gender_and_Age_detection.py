@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 import numpy as np
 
-#import deepface
+import deepface
 import cv2
 
 from deepface import DeepFace
