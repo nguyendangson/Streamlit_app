@@ -3,7 +3,7 @@ pandas
 streamlit
 streamlit_webrtc==0.47.0
 av==10.0.0
-deepface==0.0.75
+deepface
 mediapipe==0.9.0.1
 streamlit_chat
 st-pages==0.4.0
