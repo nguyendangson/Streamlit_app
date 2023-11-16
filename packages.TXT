@@ -7,3 +7,4 @@ libtesseract4
 tesseract-ocr-all
 libgl1
 libespeak1
+libglib2.0-0
