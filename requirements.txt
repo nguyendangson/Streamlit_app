@@ -3,7 +3,6 @@ streamlit_chat==0.0.2.2
 st-pages==0.4.0
 numpy==1.23.4
 deepface
-opencv-python
 opencv-python-headless==4.6.0.66
 matplotlib==3.5.2
 pandas==1.4.2
