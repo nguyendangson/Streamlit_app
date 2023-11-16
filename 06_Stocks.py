@@ -71,6 +71,7 @@ with coll[1]:
     stocks("SQ")
     stocks("MU")
     stocks("HOOD")
+    stocks("DPSGY")
     stocks("PYPL")
     stocks("RBLX")
     stocks("SHOP")
