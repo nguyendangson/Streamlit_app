@@ -1,5 +1,5 @@
 numpy
-opencv-python-headless==4.5.1.48
+opencv-python-headless==4.5.4.60
 deepface
 streamlit
 streamlit_webrtc==0.47.0
