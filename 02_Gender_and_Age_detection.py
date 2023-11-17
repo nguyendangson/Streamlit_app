@@ -1,9 +1,7 @@
 import streamlit as st
 from PIL import Image
 import numpy as np
-
 from deepface import DeepFace
-import cv2
 from st_pages import Page, Section, add_page_title, show_pages ,show_pages_from_config
 add_page_title()
 
