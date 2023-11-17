@@ -2,7 +2,7 @@ numpy
 opencv-python-headless==4.5.4.60
 deepface 0.0.79
 streamlit
-streamlit_webrtc==0.47.0
+streamlit_webrtc
 streamlit_option_menu
 streamlit_chat
 st-pages
