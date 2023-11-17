@@ -1,3 +1,7 @@
+numpy
+deepface
+opencv-python-headless
+opencv-python
 streamlit
 streamlit_webrtc==0.47.0
 streamlit_option_menu
@@ -6,10 +10,6 @@ st-pages
 pandas
 Pillow==9.5.0
 av==10.0.0
-numpy
-deepface
-opencv-python-headless
-opencv-python
 mediapipe==0.9.0.1
 matplotlib==3.5.2
 pandas_datareader==0.10.0
