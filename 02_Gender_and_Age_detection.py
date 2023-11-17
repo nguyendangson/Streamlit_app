@@ -14,7 +14,7 @@ def deepface_detect(img):
 
 
 def show_test(image2):
-    backends = ['opencv', 'ssd', 'dlib', 'mtcnn', 'retinaface', 'mediapipe']
+    backends = ['ssd', 'dlib', 'mtcnn', 'retinaface', 'mediapipe']
     image2 = image2.convert('RGB')
     image2 = np.array(image2)
     detection2=deepface_detect(image2)
@@ -24,7 +24,7 @@ def show_test(image2):
 
     # Emotion: happy, neutral, angry, sad, disgust and surprise
     st.write("Emotion=",max(detection2[0]["emotion"],key=detection2[0]["emotion"].get))
-    face_objs = DeepFace.detectFace(image2, detector_backend = backends[4])
+    face_objs = DeepFace.detectFace(image2, detector_backend = backends[3])
 
     #st.image(image2,width=400)
     #st.image(face_objs,width=400)
