@@ -2,13 +2,13 @@ streamlit
 streamlit_webrtc==0.47.0
 streamlit_option_menu
 streamlit_chat
+st-pages
 numpy
 pandas
 Pillow==9.5.0
 av==10.0.0
 deepface
 opencv-python-headless==4.5.1.48
-st-pages==0.4.0
 mediapipe==0.9.0.1
 matplotlib==3.5.2
 pandas_datareader==0.10.0
