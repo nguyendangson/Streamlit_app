@@ -1,7 +1,6 @@
 numpy
-deepface
 opencv-python-headless
-opencv-python
+deepface
 streamlit
 streamlit_webrtc==0.47.0
 streamlit_option_menu
