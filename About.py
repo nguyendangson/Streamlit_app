@@ -21,7 +21,7 @@ show_pages([
     Page("02_Gender_and_Age_detection.py", "Detection", "👁️"),
     Page("10_Data_Map.py", "Data Map", "🌍"),
     #Page("13_Natural_Language_Processing.py", "Natural Language Processing", "🔠"),
-    Page("14_Music_and_Songs_Generated.py", "Music and Songs Generated", "♬♪"),
+    Page("14_Music_and_Songs_Generated.py", "Music of Math", "♬♪"),
     
     #Section(name="Information Security", icon="🔐"),
     #Page("05_Hacking.py", "Hack", "😈")
