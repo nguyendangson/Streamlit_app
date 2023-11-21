@@ -13,5 +13,6 @@ yfinance==0.1.73
 Pillow==9.5.0
 matplotlib==3.5.2
 pandas
+fluidsynth
 scamp
 scamp_extensions
