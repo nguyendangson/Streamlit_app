@@ -3,7 +3,7 @@ import yfinance as yf
 import pandas as pd
 from yahoo_fin import stock_info
 #from matplotlib.animation import FuncAnimation
-from pandas_datareader import data as pdr
+#from pandas_datareader import data as pdr
 #from stock_pandas import StockDataFrame
 import matplotlib.pyplot as plt
 import numpy as np
