@@ -7,7 +7,7 @@ from yahoo_fin import stock_info
 #from stock_pandas import StockDataFrame
 import matplotlib.pyplot as plt
 import numpy as np
-import plotly.express as px # interactive charts
+#import plotly.express as px # interactive charts
 
 from dateutil.relativedelta import relativedelta
 import time # to simulate a real time data, time loop
