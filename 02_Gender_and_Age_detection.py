@@ -26,11 +26,11 @@ def show_test(image2):
     image2 = np.array(image2)
     detection2=deepface_detect(image2)
     st.write("Age=",detection2[0]["age"])
-    st.write("Gender=",max(detection2[0]["gender"],key=detection2[0]["gender"].get))
-    st.write("Race=",max(detection2[0]["race"],key=detection2[0]["race"].get))
+    #st.write("Gender=",max(detection2[0]["gender"],key=detection2[0]["gender"].get))
+    #st.write("Race=",max(detection2[0]["race"],key=detection2[0]["race"].get))
 
     # Emotion: happy, neutral, angry, sad, disgust and surprise
-    st.write("Emotion=",max(detection2[0]["emotion"],key=detection2[0]["emotion"].get))
+    #st.write("Emotion=",max(detection2[0]["emotion"],key=detection2[0]["emotion"].get))
     face_objs = DeepFace.detectFace(image2, detector_backend = backends[3])
 
     #st.image(image2,width=400)
