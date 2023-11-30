@@ -9,8 +9,13 @@ from st_pages import Page, Section, add_page_title, show_pages ,show_pages_from_
 add_page_title()
 
 #Face detection function by DeepFace of Facebook
+# def deepface_detect(img):
+#     demography = DeepFace.analyze(img, actions = ['age', 'gender', 'race', 'emotion'])
+
+#     return demography
+
 def deepface_detect(img):
-    demography = DeepFace.analyze(img, actions = ['age', 'gender', 'race', 'emotion'])
+    demography = DeepFace.analyze(img, actions = ['age'])
 
     return demography
 
