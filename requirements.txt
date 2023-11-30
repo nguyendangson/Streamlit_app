@@ -2,6 +2,7 @@ numpy
 pandas 
 streamlit 
 streamlit_webrtc==0.47.0 
+streamlit_chat 
 av==10.0.0 
 opencv-python-headless
 deepface==0.0.75 
