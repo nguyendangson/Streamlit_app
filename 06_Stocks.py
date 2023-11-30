@@ -265,7 +265,7 @@ if Input_stock:
     # stock.earnings_forecasts
     # stock.analyst_price_target
 
-    st.header("Real-time stock:")
+    #st.header("Real-time stock:")
     #fig, real_time_stock = plt.subplots()
     real_time_stock=pd.DataFrame({"Time": datetime.now().strftime("%H:%M:%S"), "Real time stock": [stock_info.get_live_price(Input_stock)]})
     #chart=st.line_chart(real_time_stock, width=300, height=500)
