@@ -23,13 +23,13 @@ from datetime import datetime
 end = dt.datetime.now()
 start = end - dt.timedelta(weeks=52)
 
-def stocks(input):
-    data = yf.download(input, start=start, end=end)
-    max=round(data["Close"].max(),2)
-    min=round(data["Close"].min(),2)
-    real_price= round(stock_info.get_live_price(input),2)
-    st.slider(input + " ("+ str(min) + ", " + str(real_price) + ", " + str(max) + ")", int(min), int(max), int(real_price))
-    st.divider()
+# def stocks(input):
+#     data = yf.download(input, start=start, end=end)
+#     max=round(data["Close"].max(),2)
+#     min=round(data["Close"].min(),2)
+#     real_price= round(stock_info.get_live_price(input),2)
+#     st.slider(input + " ("+ str(min) + ", " + str(real_price) + ", " + str(max) + ")", int(min), int(max), int(real_price))
+#     st.divider()
     #st.metric(label=input, value= stock_info.get_live_price(input),delta=stock_info.get_live_price(input)-price)
 
 # st.header("Trending Stocks" )
