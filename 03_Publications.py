@@ -32,8 +32,8 @@ st.header("Preprints")
 
 st.header("Publications")
 "- **Son Dang Nguyen**, [\"A proof of Lee-Lee's conjecture about geometry of rigid modules,\"](https://id.elsevier.com/as/authorization.oauth2?platSite=SD%2Fscience&scope=openid%20email%20profile%20els_auth_info%20els_idp_info%20els_idp_analytics_attrs%20els_sa_discover%20urn%3Acom%3Aelsevier%3Aidp%3Apolicy%3Aproduct%3Ainst_assoc&response_type=code&redirect_uri=https%3A%2F%2Fwww.sciencedirect.com%2Fuser%2Fidentity%2Flanding&authType=SINGLE_SIGN_IN&prompt=login&client_id=SDFE-v3&state=retryCounter%3D0%26csrfToken%3Dcab0d417-ad7d-4f7d-85af-40abe8472ce8%26idpPolicy%3Durn%253Acom%253Aelsevier%253Aidp%253Apolicy%253Aproduct%253Ainst_assoc%26returnUrl%3D%252Fscience%252Farticle%252Fabs%252Fpii%252FS0021869322004045%26prompt%3Dlogin%26cid%3Darp-3a4a63a7-8670-47dd-9b94-0c02e11738d6) " "J. Algebra 611 (2022), 422-434."
-image1 = Image.open('Capture2.JPG')
-image2 = Image.open('Capture3.JPG')
+image1 = Image.open('Capture2.png')
+image2 = Image.open('Capture3.png')
 list_image=[image1,image2]
 st.image(list_image,width=300)
 #st.image(image1,width=300)
