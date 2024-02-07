@@ -18,7 +18,7 @@ show_pages([
     #Section(name="Math", icon="🔢"),
     Section(name="Data Science", icon="🤖"),
     Page("06_Stocks.py", "Stocks", "📈"),
-    Page("02_Gender_and_Age_detection.py", "Detection", "👁️"),
+    #Page("02_Gender_and_Age_detection.py", "Detection", "👁️"),
     Page("10_Data_Map.py", "Data Map", "🌍"),
     #Page("13_Natural_Language_Processing.py", "Natural Language Processing", "🔠"),
     Page("14_Music_and_Songs_Generated.py", "Music of Math", "♬♪"),
